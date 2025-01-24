@@ -41,7 +41,6 @@ router.get("/multiply/:x/:y", (req, res) => {
 });
 
 router.get("/calculate/:a/:b/operation", (req, res) =>{
-
     switch (req.params.operation) {
         case "+":
             res.send (`${a + b}`);
