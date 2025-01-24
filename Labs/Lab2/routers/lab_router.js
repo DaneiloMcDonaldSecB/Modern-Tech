@@ -22,25 +22,10 @@ router.get("/add/:x/:y", (req, res) => {
     res.send(`${x + y}`);
 })
 
-router.get("/subtract/:x/:y", (req, res) => {
-    let x = parseFloat(req.params.x);
-    let y = parseFloat(req.params.y);
-    res.send(`${x - y}`);
-})
 
-router.get("/divide/:x/:y", (req, res) => {
-    let x = parseFloat(req.params.x);
-    let y = parseFloat(req.params.y);
-    res.send(`${x / y}`);
-})
-
-router.get("/multiply/:x/:y", (req, res) => {
-    let x = parseFloat(req.params.x);
-    let y = parseFloat(req.params.y);
-    res.send(`${x * y}`);
-});
-
-router.get("/calculate/:a/:b/operation", (req, res) =>{
+router.get("/calculate/:a/:b/:operation", (req, res) =>{
+    let a = parseFloat(req.params.a);
+    let b = parseFloat(req.params.b);
     switch (req.params.operation) {
         case "+":
             res.send (`${a + b}`);
