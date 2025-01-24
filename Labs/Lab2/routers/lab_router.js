@@ -44,9 +44,6 @@ router.get("/calculate/:a/:b/operation", (req, res) =>{
 
     switch (req.params.operation) {
         case "+":
-            let a = parseFloat(req.params.x)
-            let b = parseFloat(req.params.y)
-
             res.send (`${a + b}`);
             break;
 
