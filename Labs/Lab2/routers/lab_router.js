@@ -15,38 +15,53 @@ router.get("/name", (req, res)=>{
     res.send("Hello, I'm Daneilo. My student number is N01652962.") 
  })
  
-router.get("/add:x/:y", (req, res)=>{
-    let x = req.params.x;
-})
 
-router.get("/add:x/:y", (req, res)=>{
+router.get("/add/:x/:y", (req, res) => {
     let x = parseFloat(req.params.x);
     let y = parseFloat(req.params.y);
-
-    res.send(`${x+y}`)
+    res.send(`${x + y}`);
 })
 
+router.get("/subtract/:x/:y", (req, res) => {
+    let x = parseFloat(req.params.x);
+    let y = parseFloat(req.params.y);
+    res.send(`${x - y}`);
+})
+
+router.get("/divide/:x/:y", (req, res) => {
+    let x = parseFloat(req.params.x);
+    let y = parseFloat(req.params.y);
+    res.send(`${x / y}`);
+})
+
+router.get("/multiply/:x/:y", (req, res) => {
+    let x = parseFloat(req.params.x);
+    let y = parseFloat(req.params.y);
+    res.send(`${x * y}`);
+});
+
 router.get("/calculate/:a/:b/operation", (req, res) =>{
+
     switch (req.params.operation) {
-        case " + ":
-            let a = parseFloat(req.params.a)
-            let b = parseFloat(req.params.b)
+        case "+":
+            let a = parseFloat(req.params.x)
+            let b = parseFloat(req.params.y)
 
             res.send (`${a + b}`);
             break;
 
-            case " - ":
+            case "-":
                 res.send (`${a - b}`);
                 break;
             
-            case " * ":
+            case "*":
                 res.send (`${a * b}`);
                 break;
 
-                case " / ":
+                case "/":
                     res.send (`${a / b}`);
                     break;
-                    
+
         default:
             res.send("WRONG OPERATION");
 
