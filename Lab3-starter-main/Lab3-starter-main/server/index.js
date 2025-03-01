@@ -40,7 +40,7 @@ app.get("/fetch/dog", async (req, res) => {
 app.use("/save", save_router);
 app.use("/fetch", fetch_router);
 
-// API List
+
 app.get("/", (req, res) => {
   res.send("Welcome to the server, Check /api-list for available routes");
 });
