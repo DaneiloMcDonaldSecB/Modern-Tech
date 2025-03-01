@@ -1,0 +1,3 @@
+npm -y
+npm i express nodemon
+npm create vite@latest .
