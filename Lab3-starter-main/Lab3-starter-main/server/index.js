@@ -50,7 +50,7 @@ app.use((req, res) => {
   res.status(404).json({ error: `No request for ${req.url} exists` });
 });
 
-// Start the server
+// Starts the server
 app.listen(PORT, () => {
   console.log(`Server running at: http://localhost:${PORT}`);
 });
