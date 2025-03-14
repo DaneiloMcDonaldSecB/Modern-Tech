@@ -1,0 +1,21 @@
+[
+    {
+      "title": "Lab10",
+      "description": "Bootstrap Practice Lab.",
+      "skills": ["Bootstrap", "HTML", "CSS"],
+      "githubLink": "https://github.com/DaneiloMcDonaldSecB/Lab10"
+    },
+    {
+      "title": "Interactive JavaScript Quiz",
+      "description": "An interactive quiz application using JavaScript.",
+      "skills": ["JavaScript", "HTML", "CSS"],
+      "githubLink": "https://github.com/DaneiloMcDonaldSecB/Interactive-Javascript-Quiz"
+    },
+    {
+      "title": "Bootstrap Responsive Website",
+      "description": "A responsive website built with Bootstrap.",
+      "skills": ["Bootstrap", "HTML", "CSS"],
+      "githubLink": "https://github.com/DaneiloMcDonaldSecB/Bootstrap-Responsive-Website"
+    }
+  ]
+  
