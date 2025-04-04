@@ -12,6 +12,5 @@ It allows users to create, read, update, and delete recipes using a React fronte
 - **Database**: MongoDB Atlas
 - **ODM**: Mongoose
 
----
 
 
