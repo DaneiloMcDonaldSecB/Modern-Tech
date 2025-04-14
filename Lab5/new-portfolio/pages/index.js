@@ -9,9 +9,17 @@ export default function Home() {
 
       {/* HERO SECTION */}
       <section className="min-h-screen bg-gradient-to-br from-black via-gray-900 to-gray-800 text-white flex flex-col items-center justify-center px-4 text-center">
-        <h1 className="text-5xl md:text-7xl font-bold mb-4">Daneilo McDonald</h1>
+        <img
+          src="/avatar.png"
+          alt="Daneilo McDonald"
+          className="w-32 h-32 md:w-40 md:h-40 rounded-full border-4 border-white shadow-lg mb-6"
+        />
+        <h1 className="text-5xl md:text-7xl font-bold mb-4">
+          Daneilo McDonald
+        </h1>
         <p className="text-xl md:text-2xl max-w-xl">
-          Aspiring Full-Stack Developer • Passionate about building creative and useful things on the web.
+          Aspiring Full-Stack Developer • Passionate about building creative and
+          useful things on the web.
         </p>
       </section>
 
@@ -19,8 +27,10 @@ export default function Home() {
       <section className="py-20 px-6 bg-white text-gray-800 text-center">
         <h2 className="text-4xl font-semibold mb-6">About Me</h2>
         <p className="max-w-2xl mx-auto text-lg leading-relaxed">
-          I'm a Computer Programming student at Humber College who enjoys building clean, functional, and aesthetic digital experiences.
-          My interests include front-end development, cross-platform apps, and modern UI/UX. I’m constantly learning and growing as a developer.
+          I'm a Computer Programming student at Humber College who enjoys
+          building clean, functional, and aesthetic digital experiences. My
+          interests include front-end development, cross-platform apps, and
+          modern UI/UX. I’m constantly learning and growing as a developer.
         </p>
       </section>
 
@@ -29,10 +39,12 @@ export default function Home() {
         <h2 className="text-4xl font-semibold text-center mb-12">Projects</h2>
         <div className="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
           {/* Project 1: Recipe Explorer */}
-          <div className="bg-white rounded-xl shadow-md p-6">
+          <div className="bg-white rounded-xl shadow-md p-6 transform transition hover:scale-105">
             <h3 className="text-2xl font-semibold mb-2">Recipe Explorer</h3>
             <p className="text-gray-600 mb-3">
-              A cross-platform mobile app built with React Native and Firebase to search, save, and explore recipes. Includes login, favorites sync, and dark mode.
+              A cross-platform mobile app built with React Native and Firebase
+              to search, save, and explore recipes. Includes login, favorites
+              sync, and dark mode.
             </p>
             <a
               href="https://github.com/DaneiloMcDonaldSecB/RecipeExplorer"
@@ -45,10 +57,13 @@ export default function Home() {
           </div>
 
           {/* Project 2: React Portfolio */}
-          <div className="bg-white rounded-xl shadow-md p-6">
-            <h3 className="text-2xl font-semibold mb-2">React Portfolio Website</h3>
+          <div className="bg-white rounded-xl shadow-md p-6 transform transition hover:scale-105">
+            <h3 className="text-2xl font-semibold mb-2">
+              React Portfolio Website
+            </h3>
             <p className="text-gray-600 mb-3">
-              A clean and responsive portfolio website built using React and CSS to showcase my bio, projects, and contact information.
+              A clean and responsive portfolio website built using React and CSS
+              to showcase my bio, projects, and contact information.
             </p>
             <a
               href="https://github.com/DaneiloMcDonaldSecB/Modern-Tech/tree/main/Portfolio%20Assignment/react-portfolio-main"
@@ -66,10 +81,20 @@ export default function Home() {
       <footer className="bg-black text-white py-8 text-center">
         <p className="mb-2">© 2025 Daneilo McDonald</p>
         <div className="space-x-4">
-          <a href="https://github.com/DaneiloMcDonaldSecB" target="_blank" className="hover:underline">
+          <a
+            href="https://github.com/DaneiloMcDonaldSecB"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="hover:underline"
+          >
             GitHub
           </a>
-          <a href="https://linkedin.com/in/daneilo" target="_blank" className="hover:underline">
+          <a
+            href="https://www.linkedin.com/in/daneilo-mcdonald-80216819b/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="hover:underline"
+          >
             LinkedIn
           </a>
         </div>
